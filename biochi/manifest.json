@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "中文 Bionic Reading",
+  "version": "1.0",
+  "description": "加粗中文词首字",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
